@@ -2,7 +2,19 @@
 
 * Create your custom fragment class entends from `DialogContentFragment` and define your custom callback
 ```
-public class ArithmeticFragment extends DialogContentFragment<ArithmeticResultCallback>
+public class ArithmeticFragment extends DialogContentFragment<ArithmeticResultCallback> {
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
+        @Nullable Bundle savedInstanceState) {
+        // return your custom view
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        // implement your logic
+    }
+}
 ```
 ```
 public interface ArithmeticResultCallback {

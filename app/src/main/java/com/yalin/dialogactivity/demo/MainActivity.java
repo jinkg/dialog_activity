@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements Callback1, Callba
 
     public void test(View view) {
         showDialog1(view);
+        showDialog1(view);
         showDialog2(view);
     }
 
